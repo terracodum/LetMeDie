@@ -18,5 +18,8 @@ function mi() {
 }
 
 
-button.addEventListener('click', () => {timer = setInterval(() => {mi();},100);});
+button.addEventListener('click', () => {
+    die = 1000;
+    timer = setInterval(() => {mi();},100);}
+    );
 
