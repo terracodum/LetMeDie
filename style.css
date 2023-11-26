@@ -12,12 +12,32 @@
     gap:40px;
 }
 body {
-    background-image: url("images/ken_pc.gif") ;
-    font-family: "ken";
-    color: #a4213f;
+
+    height: 100%;
+}
+.bg_im {
+    background-image: url("images/ezgif.com-resize.gif") ;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: gray;
+    height: 100vh;
+    width: 100%;
+}
+.bg_im::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px); /* apply the blur */
+    pointer-events: none; /* make the overlay click-through */
+  }
+.bex {
+    font-family: "ken";
+    width: 100vw;
+    color: #a4213f;
+    position: absolute;
+    z-index: 2;
+    top:0;
 }
 .header {
     background-color: rgb(149, 20, 51,0.2);
