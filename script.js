@@ -13,8 +13,6 @@ function mi() {
         counter.textContent = die + "-7";
         console.log(die);
     }   
-
-
 }
 
 
